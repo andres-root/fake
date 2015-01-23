@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	document.write("I'm still alive")
+	document.write("I'm still alive");
 
 /***/ }
 /******/ ])
