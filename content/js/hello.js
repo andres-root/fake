@@ -3,7 +3,7 @@ define(function (require){
 	var $ = require('jQuery');
 	function Hello(name) {
 		this.word = $("#word").val();
-		this.message = this + name + "!";
+		this.message = this.word + name + "!";
 	}
 	Hello.prototype = {};
 	Hello.prototype.constructor = Hello;
