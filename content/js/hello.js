@@ -1,6 +1,5 @@
-define(function (require){
+define(['jquery'], function ($){
 	'use strict';
-	var $ = require('jQuery');
 	function Hello(name) {
 		this.word = $("#word").val();
 		this.message = this.word + name + "!";
