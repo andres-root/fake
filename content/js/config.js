@@ -1,7 +1,6 @@
 require.config({
 	baseUrl: "content/js/",
 	deps: ['main'],
-	enforceDefine: true,
 	paths: {
 		"jquery": "content/components/jquery/dist/jquery.min.js",
 		"underscore": "content/components/underscore/underscore-min.js",
@@ -10,6 +9,20 @@ require.config({
 		"masonry": "content/components/masonry/dist/masonry.pkgd.min.js"
 	},
 	shim: {
-
+		"jquery": {
+			exports: "jQuery"
+		},
+		"underscore": {
+			exports: "underscore"
+		},
+		"bootstrap": {
+			exports: "bootstrap"
+		},
+		"isotope": {
+			exports: ""
+		},
+		"masonry": {
+			exports: "masonry"
+		},
 	}
 });

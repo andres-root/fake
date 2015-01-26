@@ -1,7 +1,9 @@
-define(function (){
+define(function (require){
 	'use strict';
+	var $ = require('jQuery');
 	function Hello(name) {
-		this.message = "Hello " + name + "!";
+		this.word = $("#word").val();
+		this.message = this + name + "!";
 	}
 	Hello.prototype = {};
 	Hello.prototype.constructor = Hello;
