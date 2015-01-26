@@ -1,1 +1,1 @@
-module.exports = "Content is alive!"
+module.exports = "Content is alive!";
