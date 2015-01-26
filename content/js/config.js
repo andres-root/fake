@@ -9,19 +9,19 @@ require.config({
 		"masonry": "content/components/masonry/dist/masonry.pkgd.min.js"
 	},
 	shim: {
-		"jquery": {
+		jquery: {
 			exports: "jQuery"
 		},
-		"underscore": {
+		underscore: {
 			exports: "underscore"
 		},
-		"bootstrap": {
+		bootstrap: {
 			exports: "bootstrap"
 		},
-		"isotope": {
+		isotope: {
 			exports: ""
 		},
-		"masonry": {
+		masonry: {
 			exports: "masonry"
 		},
 	}
