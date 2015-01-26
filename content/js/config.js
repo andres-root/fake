@@ -1,6 +1,7 @@
 require.config({
 	baseUrl: "content/js/",
 	deps: ['main'],
+	enforceDefine: true,
 	paths: {
 		"jquery": "content/components/jquery/dist/jquery.min.js",
 		"underscore": "content/components/underscore/underscore-min.js",

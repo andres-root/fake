@@ -1,9 +1,9 @@
 define(function (){
 	'use strict';
-	function sayHello(name) {
+	function Hello(name) {
 		this.message = "Hello " + name + "!";
 	}
-	sayHello.prototype = {};
-	sayHello.prototype.constructor = sayHello;
-	return sayHello;
+	Hello.prototype = {};
+	Hello.prototype.constructor = Hello;
+	return Hello;
 });

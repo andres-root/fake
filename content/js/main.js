@@ -1,5 +1,6 @@
-require(['hello'], function (hello){
+define(function (require){
 	'use strict';
-	var result = hello.sayHello("Andres");
+	var say = require('say');
+	var result = say.create("Andres");
 	console.log(result);
 });
