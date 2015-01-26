@@ -45,7 +45,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	document.write("I'm still alive");
-	document.write(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"content/js/content.js\""); e.code = 'MODULE_NOT_FOUND'; throw e; }())));
+	document.write(__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"content.js\""); e.code = 'MODULE_NOT_FOUND'; throw e; }())));
 
 /***/ }
 /******/ ])
