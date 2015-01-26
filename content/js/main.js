@@ -1,3 +1,5 @@
-define(function (){
-	console.log("Hello, world!");
+require(['hello'], function (hello){
+	'use strict';
+	var result = hello.sayHello("Andres");
+	console.log(result);
 });
