@@ -2,7 +2,6 @@
   "name": "fake",
   "version": "1.0.0",
   "description": "My fake agency",
-  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +9,10 @@
     "type": "git",
     "url": "https://github.com/andres-root/fake.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "andresroot",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/andres-root/fake/issues"
   },
-  "homepage": "https://github.com/andres-root/fake"
+  "homepage": "http://andres-root.github.io/fake/"
 }
