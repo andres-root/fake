@@ -1,0 +1,10 @@
+{
+  "name": "fake",
+  "version": "0.0.0",
+  "homepage": "https://github.com/andres-root/fake",
+  "authors": [
+    "andres-root <andres.root.coder@gmail.com>"
+  ],
+  "description": "fake inc",
+  "license": "MIT"
+}
