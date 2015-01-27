@@ -7,6 +7,7 @@ $first-slide: "../../static/img/first-slide.jpg";
 .first {
 	background-image: url($first-slide);
 	background-size: cover;
+	background-repeat: no;
 }
 
 
