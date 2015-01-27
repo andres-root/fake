@@ -1,4 +1,4 @@
-{
+module.exports = {
     entry: "./content/js/main",
     output: {
         path: "./static/js",
