@@ -1,0 +1,4 @@
+.first-slide {
+  background-image: url("/static/img/first-slide.jpg");
+  background-size: cover;
+}

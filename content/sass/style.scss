@@ -1,0 +1,12 @@
+@import "compass";
+@import "compass/css3";
+
+$background: #34495e;
+$first-slide: "/static/img/first-slide.jpg";
+
+.first-slide {
+	background-image: url($first-slide);
+	background-size: cover;
+}
+
+
