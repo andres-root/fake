@@ -1,8 +1,7 @@
 {
-    context: "/app",
-    entry: "./main",
+    entry: "./content/js/main",
     output: {
-        path: "/static/js",
-        filename: "bundle.js"
+        path: "./static/js",
+        filename: "app.js"
     }
 }
