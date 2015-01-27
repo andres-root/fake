@@ -1,0 +1,19 @@
+{
+  "name": "fake",
+  "version": "1.0.0",
+  "description": "My fake agency",
+  "main": "content/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andres-root/fake.git"
+  },
+  "author": "andresroot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andres-root/fake/issues"
+  },
+  "homepage": "http://andres-root.github.io/fake/"
+}
