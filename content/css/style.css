@@ -31,3 +31,12 @@ header .dropdown a:hover {
   cursor: pointer;
   width: 40%;
 }
+
+.item {
+  width: 25%;
+  background-color: #ccc;
+}
+
+.item.w2 {
+  width: 50%;
+}
