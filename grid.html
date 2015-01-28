@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="content/components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="content/css/style.css">
+	<title>fAk3 Inc.</title>
+</head>
+<body>
+	<div class="wrapper">
+	</div>
+	<!-- webpack is not working yet -->
+	<script src="content/components/jquery/dist/jquery.min.js"></script>
+	<script src="content/components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="content/components/masonry/dist/masonry.pkgd.min.js"></script>
+	<script type="text/javascript">
+		var container = document.querySelector('#masonry-grid');
+		var maso = new Masonry( container, {
+			columnWidth: 200,
+			itemSelector: '.grid-item'
+		});
+	</script>
+</body>
+</html>
