@@ -10,6 +10,9 @@ header {
 header .navbar-collapse.collapse {
   position: absolute;
 }
+header .dropdown {
+  color: #fff;
+}
 
 .first {
   height: 1024px;

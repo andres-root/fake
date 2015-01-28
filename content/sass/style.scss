@@ -3,6 +3,7 @@
 @import "utils";
 
 $background: #fff;
+$menu-color: #fff;
 $first-slide: "../../static/img/first-slide.jpg";
 
 .first {
@@ -15,6 +16,9 @@ header {
 	position: relative;
 	.navbar-collapse.collapse {
 		position: absolute;
+	}
+	.dropdown {
+		color: $menu-color;
 	}
 }
 
