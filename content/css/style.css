@@ -16,6 +16,7 @@ header .dropdown a:hover {
 }
 
 .first {
+  position: relative;
   top: 0;
   right: 0;
   bottom: 0;
@@ -32,11 +33,6 @@ header .dropdown a:hover {
   width: 40%;
 }
 
-.item {
-  width: 25%;
-  background-color: #ccc;
-}
-
-.item.w2 {
-  width: 50%;
+.third .masonry-grid .grid-item {
+  background-color: blue;
 }

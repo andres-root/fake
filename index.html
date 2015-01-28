@@ -43,19 +43,11 @@
 		</section>
 		<section class="third">
 			<div class="container-fluid">
-				<div id="isotope-grid">
-				    <div class="item transition metal">...</div>
-						<div class="item"></div>
-						<div class="item w2"></div>
-						<div class="item w2"></div>
-						<div class="item"></div>
-						<div class="item"></div>
-						<div class="item w2"></div>
-						<div class="item"></div>
-						<div class="item"></div>
-						<div class="item w2"></div>
-						<div class="item w2"></div>
-				    </div>
+				<div id="masonry-grid">
+					<div class="gutter-sizer"></div>
+					<div class="grid-item"></div>
+					<div class="grid-item"></div>
+					<div class="grid-item"></div>
 				</div>
 			</div>
 		</section>
@@ -63,16 +55,13 @@
 	<!-- webpack is not working yet -->
 	<script src="content/components/jquery/dist/jquery.min.js"></script>
 	<script src="content/components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="content/components/isotope/dist/isotope.pkgd.min.js"></script>
-	<!-- <script src="content/components/masonry/dist/masonry.pkgd.min.js"></script> -->
+	<script src="content/components/masonry/dist/masonry.pkgd.min.js"></script>
 	<script type="text/javascript">
-		var $iso = $('#isotope-grid');
-
-		$iso.isotope({
-			itemSelector: ".item",
-			layoutMode: "masonry"
+		var container = document.querySelector('#masonry-grid');
+		var maso = new Masonry( container, {
+			columnWidth: 200,
+			itemSelector: '.grid-item'
 		});
-
 	</script>
 </body>
 </html>
