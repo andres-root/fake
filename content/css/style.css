@@ -10,10 +10,19 @@ header {
 header .navbar-collapse.collapse {
   position: absolute;
 }
-header .dropdown {
+header .dropdown a {
   color: #fff;
+}
+header .dropdown a:hover {
+  background-color: transparent;
 }
 
 .first {
   height: 1024px;
+}
+.first .welcome {
+  width: 45%;
+  color: white;
+  margin: 200px auto;
+  text-align: center;
 }

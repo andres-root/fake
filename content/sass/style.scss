@@ -18,10 +18,21 @@ header {
 		position: absolute;
 	}
 	.dropdown {
-		color: $menu-color;
+		a {
+			color: $menu-color;
+		}
+		a:hover {
+			background-color: transparent;
+		}
 	}
 }
 
 .first {
 	@include slide-size;
+	.welcome {
+		width: 45%;
+		color: white;
+		margin: 200px auto;
+		text-align: center;
+	}
 }
