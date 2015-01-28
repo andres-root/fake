@@ -10,3 +10,7 @@ header {
 header .navbar-collapse.collapse {
   position: absolute;
 }
+
+.first {
+  height: 1024px;
+}

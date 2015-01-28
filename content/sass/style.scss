@@ -1,5 +1,6 @@
 @import "compass";
 @import "compass/css3";
+@import "utils";
 
 $background: #fff;
 $first-slide: "../../static/img/first-slide.jpg";
@@ -15,4 +16,8 @@ header {
 	.navbar-collapse.collapse {
 		position: absolute;
 	}
+}
+
+.first {
+	@include slide-size;
 }
