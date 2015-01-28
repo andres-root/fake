@@ -1,7 +1,7 @@
 @import "compass";
 @import "compass/css3";
 
-$background: #34495e;
+$background: #fff;
 $first-slide: "../../static/img/first-slide.jpg";
 
 .first {
@@ -10,4 +10,9 @@ $first-slide: "../../static/img/first-slide.jpg";
 	background-repeat: no;
 }
 
-
+header {
+	position: relative;
+	.navbar-collapse.collapse {
+		position: absolute;
+	}
+}
