@@ -7,9 +7,7 @@ $menu-color: #fff;
 $first-slide: "../../static/img/first-slide.jpg";
 
 .first {
-	background-image: url($first-slide);
-	background-size: cover;
-	background-repeat: no;
+	background: url($first-slide) no-repeat scroll 100% 50% / cover transparent;
 }
 
 header {
@@ -28,11 +26,16 @@ header {
 }
 
 .first {
-	@include slide-size;
+	@include screen-size;
 	.welcome {
 		width: 45%;
-		color: white;
-		margin: 200px auto;
+		color: #fff;
+		margin: 100px auto;
 		text-align: center;
+		img {
+			cursor: pointer;
+			width: 40%;
+		}
 	}
+
 }

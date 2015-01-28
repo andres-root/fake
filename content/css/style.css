@@ -1,7 +1,5 @@
 .first {
-  background-image: url("../../static/img/first-slide.jpg");
-  background-size: cover;
-  background-repeat: no;
+  background: url("../../static/img/first-slide.jpg") no-repeat scroll 100% 50%/cover transparent;
 }
 
 header {
@@ -18,11 +16,18 @@ header .dropdown a:hover {
 }
 
 .first {
-  height: 1024px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .first .welcome {
   width: 45%;
-  color: white;
-  margin: 200px auto;
+  color: #fff;
+  margin: 100px auto;
   text-align: center;
+}
+.first .welcome img {
+  cursor: pointer;
+  width: 40%;
 }
