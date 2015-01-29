@@ -5,9 +5,11 @@
 $background: #fff;
 $menu-color: #fff;
 $first-slide: "../../static/img/first-slide.jpg";
+$third-slide: "../../static/img/third-slide.jpg";
 
-.first {
-	background: url($first-slide) no-repeat scroll 100% 50% / cover transparent;
+html, body {
+    height: 100%;
+    width: 100%;
 }
 
 header {
@@ -27,6 +29,8 @@ header {
 
 .first {
 	@include screen-size;
+	top: 0;
+	background: url($first-slide) no-repeat scroll 100% 50% / cover transparent;
 	.welcome {
 		width: 45%;
 		color: #fff;
@@ -41,9 +45,18 @@ header {
 }
 
 .third {
-	.masonry-grid {
-		.grid-item {
-			background-color: blue;
-		}
+	top: 100%;
+	@include screen-size;
+	.item { width: 100px; height: 100px; border: 1px solid black;}
+	.item.w2 { width: 300px; }
+	.item.he2 { height: 300px; }
+	.blue {
+		background-color: blue;
+	}
+	.red {
+		background-color: red;
+	}
+	.yellow {
+		background-color: yellow;
 	}
 }

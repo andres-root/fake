@@ -42,27 +42,29 @@
 			</div>
 		</section>
 		<section class="third">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="item blue he2">...</div>
-					<div class="item red w2">...</div>
-					<div class="item blue">...</div>
-					<div class="item yellow w2">...</div>
-					<div class="item red">...</div>
-					<div class="item red he2">...</div>
-				</div>
+			<div class="masonry">
+				<div class="item blue he2"></div>
+				<div class="item yellow w2"></div>
+				<div class="item yellow w2"></div>
+				<div class="item red"></div>
+				<div class="item red"></div>
+				<div class="item yellow w2"></div>
+				<div class="item red"></div>
+				<div class="item blue he2"></div>
+				<div class="item yellow w2"></div>
+				<div class="item blue he2"></div>
 			</div>
 		</section>
 	</div>
 	<!-- webpack is not working yet -->
 	<script src="content/components/jquery/dist/jquery.min.js"></script>
 	<script src="content/components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="content/components/masonry/dist/masonry.pkgd.min.js"></script>
+	<script src="content/components/packery/dist/packery.pkgd.min.js"></script>
 	<script type="text/javascript">
-		var container = document.querySelector('#masonry-grid');
-		var maso = new Masonry( container, {
-			columnWidth: 200,
-			itemSelector: '.grid-item'
+		var container = document.querySelector('.masonry');
+		var msnry = new Packery( container, {
+		  itemSelector: '.item',
+		  layourMode: 'packery'
 		});
 	</script>
 </body>
