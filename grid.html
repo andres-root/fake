@@ -5,19 +5,42 @@
 	<link rel="stylesheet" href="content/components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="content/css/style.css">
 	<title>fAk3 Inc.</title>
+	<style type="text/css">
+		.item { width: 100px; height: 100px; border: 1px solid black;}
+		.item.w2 { width: 300px; }
+		.item.he2 { height: 300px; }
+		.blue {
+			background-color: blue;
+		}
+		.red {
+			background-color: red;
+		}
+		.yellow {
+			background-color: yellow;
+		}
+	</style>
 </head>
 <body>
 	<div class="wrapper">
+		<div id="container">
+			<div class="row">
+				<div class="item blue he2">...</div>
+				<div class="item red w2">...</div>
+				<div class="item blue">...</div>
+				<div class="item yellow w2">...</div>
+				<div class="item red">...</div>
+				<div class="item red he2">...</div>
+			</div>
+		</div>
 	</div>
 	<!-- webpack is not working yet -->
 	<script src="content/components/jquery/dist/jquery.min.js"></script>
 	<script src="content/components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="content/components/masonry/dist/masonry.pkgd.min.js"></script>
 	<script type="text/javascript">
-		var container = document.querySelector('#masonry-grid');
-		var maso = new Masonry( container, {
-			columnWidth: 200,
-			itemSelector: '.grid-item'
+		var container = document.querySelector('#container');
+		var msnry = new Masonry( container, {
+		  itemSelector: '.item',
 		});
 	</script>
 </body>
