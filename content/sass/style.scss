@@ -6,11 +6,13 @@ $background: #fff;
 $menu-color: #fff;
 $first-slide: "../../static/img/first-slide.jpg";
 $third-slide: "../../static/img/third-slide.jpg";
+$honda-red: red;
 
 html, body {
     height: 100%;
     width: 100%;
 }
+
 
 header {
 	position: relative;
@@ -47,22 +49,53 @@ header {
 .third {
 	top: 100%;
 	@include screen-size;
-	.item { min-width: 100px; min-height: 100px; border: 1px solid black;}
-	.w2 { width: 300px; }
-	.he2 { height: 300px; }
-	.blue {
-		background-color: blue;
+	.item {
+		.image img {
+			width: 200px;
+		}
+		.text {
+			width: 200px;
+			height: 200px;
+		}
 	}
-	.red {
-		background-color: red;
+
+	.item.hor {
+		.text, .image {
+			float: left;
+		}
+		.image{
+			img {
+				vertical-align: baseline !important;
+				min-width: 400px;
+				height: 200px;
+			}
+		}
 	}
-	.yellow {
-		background-color: yellow;
-	}
-	.lft {
-		float: left;
+	.text {
+		min-width: 200px;
+		min-height: 200px;
+		text-align: center;
 		position: relative;
-		min-width: 100px;
-		min-height: 100px;
+		.content {
+			position: absolute;
+			bottom: 0;
+			left: 25%;
+			transform: translateY(-25%);
+			p {
+				padding-top: 15px;
+			}
+			a {
+				color: #000 !important;
+				text-decoration: underline;	
+			}
+		}
+	}
+}
+
+.honda-red {
+	background-color: $honda-red;
+	color: #fff;
+	a {
+		color: #fff !important;
 	}
 }
