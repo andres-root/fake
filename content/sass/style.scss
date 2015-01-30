@@ -47,9 +47,9 @@ header {
 .third {
 	top: 100%;
 	@include screen-size;
-	.item { width: 100px; height: 100px; border: 1px solid black;}
-	.item.w2 { width: 300px; }
-	.item.he2 { height: 300px; }
+	.item { min-width: 100px; min-height: 100px; border: 1px solid black;}
+	.w2 { width: 300px; }
+	.he2 { height: 300px; }
 	.blue {
 		background-color: blue;
 	}
@@ -58,5 +58,11 @@ header {
 	}
 	.yellow {
 		background-color: yellow;
+	}
+	.lft {
+		float: left;
+		position: relative;
+		min-width: 100px;
+		min-height: 100px;
 	}
 }

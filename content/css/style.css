@@ -43,14 +43,14 @@ header .dropdown a:hover {
   left: 0;
 }
 .third .item {
-  width: 100px;
-  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
   border: 1px solid black;
 }
-.third .item.w2 {
+.third .w2 {
   width: 300px;
 }
-.third .item.he2 {
+.third .he2 {
   height: 300px;
 }
 .third .blue {
@@ -61,4 +61,10 @@ header .dropdown a:hover {
 }
 .third .yellow {
   background-color: yellow;
+}
+.third .lft {
+  float: left;
+  position: relative;
+  min-width: 100px;
+  min-height: 100px;
 }
